@@ -2,14 +2,7 @@
 
 **_bc-messenger_ is a prototype of instant messaging application built with React and _PubNub_ as the backend. _PubNub_ documentation is available [here](https://www.pubnub.com/docs/sdks/javascript)**.
 
-<style>
-  img {
-    width: 300px;
-    height: auto;
-  }
-</style>
-
-![App demo image](./src/assets/demo.jpg)
+<img src="./src/assets/demo.jpg" alt="App demo image" width="220"/>
 
 ---
 
