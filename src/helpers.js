@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { userId } from "./config";
 
 export function instantiatePubnub(PubNub) {
@@ -9,14 +8,4 @@ export function instantiatePubnub(PubNub) {
   });
 
   return pubnub;
-}
-
-export function useSimulateImgUpload() {
-  const [uploadStatus, setUploadStatus] = useState("pending");
-
-  setTimeout(() => {
-    setUploadStatus("success");
-  }, 5000);
-
-  return uploadStatus;
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import { useSimulateImgUpload } from "../../helpers.js";
+import useSimulateImgUpload from "../../hooks/useSimulateImgUpload";
 
 export default function ImagePreview(file) {
   const uploadStatus = useSimulateImgUpload();
