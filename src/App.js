@@ -12,7 +12,7 @@ const pubnub = instantiatePubnub(PubNub);
 function App() {
   return (
     <PubNubProvider client={pubnub}>
-      <Chat {...{ currentChannel, theme }}>
+      <Chat currentChannel={currentChannel} theme={theme}>
         <ChatRoom />
       </Chat>
     </PubNubProvider>
