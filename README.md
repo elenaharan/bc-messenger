@@ -1,8 +1,17 @@
 # bc-messenger
 
-_bc-messenger_ is a prototype of instant messaging application built with React and _PubNub_ as the backend. _PubNub_ documentation is available [here](https://www.pubnub.com/docs/sdks/javascript).
+**_bc-messenger_ is a prototype of instant messaging application built with React and _PubNub_ as the backend. _PubNub_ documentation is available [here](https://www.pubnub.com/docs/sdks/javascript)**.
+
+<style>
+  img {
+    width: 300px;
+    height: auto;
+  }
+</style>
 
 ![App demo image](./src/assets/demo.jpg)
+
+---
 
 ## Getting Started
 
@@ -15,6 +24,8 @@ To run the app in the development mode, you can run either one of the following 
 - ### `npm start`
 - ### `yarn start`
 
+---
+
 ## Features
 
 - ### Real-time messaging
@@ -26,11 +37,15 @@ To run the app in the development mode, you can run either one of the following 
 - ### Emojis/GIFs
   Enables selecting and including emojis and GIFs in text messages
 
+---
+
 ## Testing
 
 To launch the test runner in the interactive watch mode, run:
 
 ### `npm test`
+
+---
 
 ## Building the app
 
