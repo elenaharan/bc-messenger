@@ -9,7 +9,7 @@ export default function ChatMessages() {
       <MessageList
         enableReactions
         reactionsPicker={<Picker data={emojiData} />}
-        fetchMessages={3}
+        fetchMessages={25}
       />
     </div>
   );
