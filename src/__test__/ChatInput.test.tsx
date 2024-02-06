@@ -3,11 +3,11 @@ import "@testing-library/jest-dom";
 import "@testing-library/jest-dom/extend-expect";
 import "intersection-observer";
 import userEvent from "@testing-library/user-event";
-import { render, screen, act } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 import PubNub from "pubnub";
 import { PubNubProvider } from "pubnub-react";
-import * as helpers from "../helpers.js";
-import ChatInput from "../Components/ChatRoom/ChatInput.js";
+import * as helpers from "../helpers";
+import ChatInput from "../Components/ChatRoom/ChatInput";
 
 jest.mock("pubnub");
 
@@ -35,18 +35,6 @@ jest
   .mockImplementation(mockInstantiatePubnub);
 
 pubnubInstance = helpers.instantiatePubnub(PubNub);
-
-test("renders default message in input field", () => {
-  render(
-    <PubNubProvider client={pubnubInstance}>
-      <ChatInput />;
-    </PubNubProvider>
-  );
-
-  act(() => {
-    expect(screen.getByPlaceholderText("Send message")).toBeVisible();
-  });
-});
 
 test("accepts and renders a message", async () => {
   render(

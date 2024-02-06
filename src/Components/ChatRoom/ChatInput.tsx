@@ -4,11 +4,7 @@ import emojiData from "@emoji-mart/data";
 import Picker from "@emoji-mart/react";
 import ImagePreview from "./ImagePreview";
 
-type ChatInputProps = {
-  draftMessage?: string;
-};
-
-const ChatInput: React.FC<ChatInputProps> = ({ draftMessage }) => {
+const ChatInput: React.FC = () => {
   return (
     <div className="mt-auto">
       <MessageInput
@@ -16,7 +12,6 @@ const ChatInput: React.FC<ChatInputProps> = ({ draftMessage }) => {
         filePreviewRenderer={ImagePreview}
         typingIndicator
         emojiPicker={<Picker data={emojiData} />}
-        draftMessage={draftMessage}
       />
     </div>
   );
