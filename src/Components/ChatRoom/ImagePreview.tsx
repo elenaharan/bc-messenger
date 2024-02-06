@@ -1,9 +1,9 @@
 import React from "react";
 import useSimulateImgUpload from "../../hooks/useSimulateImgUpload";
 
-export default function ImagePreview(file) {
+export default function ImagePreview(file: any) {
   const uploadStatus = useSimulateImgUpload();
-  if (!file) return;
+  if (!file) return null;
 
   if (!file.type.includes("image")) return null;
 

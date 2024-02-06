@@ -20,7 +20,7 @@ class ResizeObserver {
 window.ResizeObserver = ResizeObserver;
 
 let mockInstantiatePubnub;
-let pubnubInstance;
+let pubnubInstance: any;
 
 mockInstantiatePubnub = jest.fn(
   () =>
@@ -34,7 +34,7 @@ jest
   .spyOn(helpers, "instantiatePubnub")
   .mockImplementation(mockInstantiatePubnub);
 
-pubnubInstance = helpers.instantiatePubnub();
+pubnubInstance = helpers.instantiatePubnub(PubNub);
 
 test("renders default message in input field", () => {
   render(

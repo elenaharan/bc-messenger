@@ -1,3 +1,4 @@
+import React from "react";
 import { MessageList } from "@pubnub/react-chat-components";
 
 import emojiData from "@emoji-mart/data";
